@@ -1,0 +1,40 @@
+<html>
+<head>
+  
+ <title>Ingresa la contraseña y la repeticion de la contraseña para verificar si son iguales </title>
+ <link rel="stylesheet" type="text/css" href="bootstrap.css">
+ <body background="WhatsApp Image 2020-10-12 at 4.57.57 PM (2).jpeg"></body>
+<script>
+  
+  function comprobarclave (){
+   clave1 =document.f1.clave1.value
+   clave2 =document.f1.clave2.value
+
+if (clave1 == "sheily" && clave2 =="gonzalez"){
+    alert("Los datos son correctos\n ¡Te damos la Bienvenida!")
+    var href ="empre.html";
+   window.location=href;
+
+}
+ else{
+   alert("Claves ingresadas incorrectas \n Intentalo de Nuevo");
+   var href ="index.html";
+   window.location=href
+ };
+
+  }
+</script>
+</head>
+<body>
+  <h1><u>Verificacion de contraseña y la repeticion de la contraseña si son iguales</h1></u>
+  <br>
+  Ingresa una contraseña invalida 2 veces para su verificacion, pulsa el boton y te dira si son iguales
+  <br><br>
+  <form action="" name="f1">
+   <center> <i>Ingresa contraseña: </i><input type="password"  name="clave1" size="25"></center>
+    <br>
+<center><i>Repite la contraseña:</i> <input type="password" name="clave2" size="25"></center>
+<center><br>
+<input type="button" value ="Comprobar si son iguales" onclick="comprobarclave()"></center>
+  </form>
+</body>
